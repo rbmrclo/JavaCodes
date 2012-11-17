@@ -1,0 +1,241 @@
+<html>
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+<h1>Sample BillsClocks</h1>
+
+<p>View this page's source code to see the HTML applet tags used for each clock.</p>
+
+<p>When you place this clock on your webpage, be sure to upload the following class and
+image files: 
+
+<ul>
+  <li>BillsClock.class</li>
+  <li>ClockHand.class</li>
+  <li>HmHand.class</li>
+  <li>Hms.class</li>
+  <li>SweepHand.class</li>
+  <li>java.gif</li>
+</ul>
+
+<p>Remember, the image file must go in the same directory as the class files. Also, Java
+is <i>case-sensitive</i>. Do not change the names of the class files, or else the applet
+will ot run!</p>
+
+<p>BillsClock.java is the source code file. You do not have to place this file on your web
+server. Only place the class files, and your image file (or the default image, java.gif)
+on your web server.</p>
+
+<p>You may not be able to run this (or other applets) locally (from a file) using MSIE
+3.02 because of a bug in that version of IE. The fix is either upgrade to IE 4, or upgrade
+IE 3.02's Java Virtual Machine. See <a href="http://www.microsoft.com/java">http://www.microsoft.com/java</a>
+for more information about upgrading the Java VM.</p>
+
+<p><b>Note: By using this applet, you agree to the terms of its <a href="license.html">license
+agreement</a>.</b></p>
+
+<hr>
+
+<h2>Example 1</h2>
+
+<p>This example sets US Central Standard Time (-6 hours) and also sets the clock
+background color to match this page.</p>
+
+<p>
+<applet code="BillsClock.class" width="100" height="100" ALIGN="MIDDLE">
+  <param name="BGCOLOR" value="FFFFFF">
+  <param name="FACECOLOR" value="FFFFFF">
+  <param name="SWEEPCOLOR" value="FF0000">
+  <param name="MINUTECOLOR" value="008080">
+  <param name="HOURCOLOR" value="000080">
+  <param name="TEXTCOLOR" value="000000">
+  <param name="CASECOLOR" value="000080">
+  <param name="TRIMCOLOR" value="C0C0C0">
+  <param name="LOGOIMAGEURL" value="java.gif">
+  <param name="TIMEZONE" value="-6">
+</applet>
+</p>
+
+<h2>Example 2</h2>
+
+<p>This example should display the browser's local time (LOCALONLY=1) and also sets the
+clock background color to match this page.</p>
+
+<p>
+<applet code="BillsClock.class" width="100" height="100" ALIGN="MIDDLE">
+  <param name="BGCOLOR" value="FFFFFF">
+  <param name="FACECOLOR" value="FFFFFF">
+  <param name="SWEEPCOLOR" value="FF0000">
+  <param name="MINUTECOLOR" value="008080">
+  <param name="HOURCOLOR" value="000080">
+  <param name="TEXTCOLOR" value="000000">
+  <param name="CASECOLOR" value="000080">
+  <param name="TRIMCOLOR" value="C0C0C0">
+  <param name="LOGOIMAGEURL" value="java.gif">
+  <param name="LOCALONLY" value="1">
+</applet>
+</p>
+
+<h2>Example 3</h2>
+
+<p>This example displays Greenwich Mean Time (TIMEZONE=0) and shows how placing the applet
+in a one-celled table can create a border. The background is set to black in this example.</p>
+
+<table cellpadding="0" cellspacing="0" border="4">
+  <tr>
+    <td bgcolor="#000000">
+    <applet code="BillsClock.class" width="100" height="100" ALIGN="MIDDLE">
+      <param name="BGCOLOR" value="000000">
+      <param name="FACECOLOR" value="FFFFFF">
+      <param name="SWEEPCOLOR" value="FF0000">
+      <param name="MINUTECOLOR" value="008080">
+      <param name="HOURCOLOR" value="000080">
+      <param name="TEXTCOLOR" value="000000">
+      <param name="CASECOLOR" value="000080">
+      <param name="TRIMCOLOR" value="C0C0C0">
+      <param name="LOGOIMAGEURL" value="java.gif">
+      <param name="TIMEZONE" value="0">
+    </applet>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<p align="left">Proper operation of Bill's Clock has been confirmed on the following
+browsers/OS platforms:</p>
+
+<table border="2" cellpadding="5">
+  <tr>
+    <td><strong>Operating System</strong></td>
+    <td><strong>Browser</strong></td>
+  </tr>
+  <tr>
+    <td>Windows 95</td>
+    <td>IE 3.02, 4.01<br>
+    Navigator 3.04, 4.05, 4.5</td>
+  </tr>
+  <tr>
+    <td>Windows NT 4.0</td>
+    <td>IE 4.01<br>
+    Navigator 4.5</td>
+  </tr>
+  <tr>
+    <td>Sparc/Solaris 2.5.1</td>
+    <td>Navigator 4.5</td>
+  </tr>
+  <tr>
+    <td>Intel/Solaris 2.6</td>
+    <td>Navigator 4.05</td>
+  </tr>
+  <tr>
+    <td>MacOS 8.1</td>
+    <td>IE 4.01<br>
+    Navigator 4.07<br>
+    MRJ 2.0 Applet Runner</td>
+  </tr>
+</table>
+
+<p align="left">Note: Bill's Clock <strong>did not</strong> display correct time with
+Navigator 3.1 on the Mac. This is not an applet bug.</p>
+<div align="center"><center>
+
+<table BORDER="2" CELLPADDING="5">
+  <tr>
+    <td align="center" colspan="3"><h3>HTML Applet Parameters</h3>
+    </td>
+  </tr>
+  <tr>
+    <th WIDTH="174"><p align="center"><a NAME="UQHTML2"><b>Parameter Name</b></a> </th>
+    <th WIDTH="135"><p align="center"><b>Data Type</b></th>
+    <th WIDTH="383"><p align="center"><b>Description</b> </th>
+  </tr>
+  <tr>
+    <td WIDTH="174">WIDTH</td>
+    <td WIDTH="135">int</td>
+    <td WIDTH="383">applet width in pixels </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">HEIGHT</td>
+    <td WIDTH="135">int</td>
+    <td WIDTH="383">applet height in pixels </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">BGCOLOR</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">Hex RGB triplet of background color, i.e. 000000 for black &lt;black&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">FACECOLOR</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">Hex RGB triplet of clock face, i.e. 000000 for black &lt;black&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">SWEEPCOLOR</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">Hex RGB triplet of second hand, i.e. FF0000 for red &lt;red&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">MINUTECOLOR</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">Hex RGB triplet of minute hand, i.e. C0C0C0 for light gray &lt;light
+    gray&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">HOURCOLOR</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">Hex RGB triplet of hour hand, i.e. FFFFFF for white &lt;white&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">TEXTCOLOR</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">Hex RGB triplet of numerals, i.e. FFFFFF for white &lt;white&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">CASECOLOR</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">Hex RGB triplet of case, i.e. 000000 for black &lt;black&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">TRIMCOLOR</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">Hex RGB triplet of case, i.e. 000000 for black &lt;black&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">BGIMAGEURL</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">Name of background image file, if any &lt;null&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">LOGOSTRING</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">Text to display on clock face &lt;J***X&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">LOGOIMAGEURL</td>
+    <td WIDTH="135">string</td>
+    <td WIDTH="383">File name of of logo image to display on clock face &lt;null&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">TIMEZONE</td>
+    <td WIDTH="135">real</td>
+    <td WIDTH="383">Timezone difference to GMT (Decimal hours, <strong>- if West</strong> of
+    Greenwich Meridian, <strong>+ if East</strong>.) &lt;0&gt; </td>
+  </tr>
+  <tr>
+    <td WIDTH="174">LOCALONLY</td>
+    <td WIDTH="135">int</td>
+    <td WIDTH="383">If non-zero, forces clock to display viewer's local time, with no timezone
+    correction. Any timezone offset will be disregarded. &lt;0&gt; </td>
+  </tr>
+</table>
+</center></div>
+
+<p align="center">Copyright © 1996-98 by <a href="http://w3.nai.net/~rvdi/bgiel/bill.htm">Bill
+Giel / Moondog Software</a>. All Rights Reserved.</p>
+</body>
+</html>
